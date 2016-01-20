@@ -1,0 +1,15 @@
+{
+  "name": "world-clock",
+  "version": "1.0.0",
+  "description": "Displays the times of cities around the world.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenneth Tsang",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.11.1",
+    "moment-timezone": "^0.5.0"
+  }
+}

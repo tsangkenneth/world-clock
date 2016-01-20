@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>World Clock</title>
+    <link href="world-clock.css" rel="stylesheet">
+    <script src="node_modules/moment/min/moment-with-locales.min.js"></script>
+    <script src="node_modules/moment-timezone/builds/moment-timezone-with-data.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="timezone" data-timezone="America/Los_Angeles">
+        <h2 class="timezone__city">San Francisco</h2>
+        <p class="timezone__offset">---</p>
+        <time class="timezone__time">--:--:-- UTC</time>
+      </div>
+      <div class="timezone" data-timezone="Europe/London">
+        <h2 class="timezone__city">London</h2>
+        <p class="timezone__offset">---</p>
+        <time class="timezone__time">--:--:-- UTC</time>
+      </div>
+      <div class="timezone" data-timezone="Asia/Hong_Kong">
+        <h2 class="timezone__city">香港</h2>
+        <p class="timezone__offset">---</p>
+        <time class="timezone__time">--:--:-- UTC</time>
+      </div>
+    </main>
+  </body>
+</html>
