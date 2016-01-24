@@ -1,4 +1,5 @@
 body {
+  background-color: #002b36;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -9,17 +10,19 @@ body {
   background-color: #002b36;
   box-sizing: border-box;
   color: #93a1a1;
-  justify-content: space-around;
   display: flex;
-  height: 100vh;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
 }
 
 .timezone {
-  flex: 1 1 auto;
-  flex-basis: 120px;
+  box-sizing: border-box;
+  margin: 0 24px 48px;
   text-align: center;
-  margin: 0 24px;
+  width: 300px;
 }
 
 .timezone__city {
