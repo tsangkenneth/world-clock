@@ -1,5 +1,4 @@
 body {
-  background-color: #002b36;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -7,9 +6,7 @@ body {
 
 .main {
   align-items: center;
-  background-color: #002b36;
   box-sizing: border-box;
-  color: #93a1a1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -40,11 +37,33 @@ body {
   font-weight: 200;
 }
 
-.timezone:nth-of-type(8n+1) .timezone__city { color: #b58900; }
-.timezone:nth-of-type(8n+2) .timezone__city { color: #268bd2; }
-.timezone:nth-of-type(8n+3) .timezone__city { color: #dc322f; }
-.timezone:nth-of-type(8n+4) .timezone__city { color: #859900; }
-.timezone:nth-of-type(8n+5) .timezone__city { color: #6c71c4; }
-.timezone:nth-of-type(8n+6) .timezone__city { color: #cb4b16; }
-.timezone:nth-of-type(8n+7) .timezone__city { color: #2aa198; }
-.timezone:nth-of-type(8n+8) .timezone__city { color: #d33682; }
+[data-theme="base16-ocean-dark"],
+[data-theme="base16-ocean-dark"] .main {
+  background-color: #2b303b;
+  color: #93a1a1;
+}
+
+[data-theme="base16-ocean-dark"] { background-color: }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+1) .timezone__city { color: #ebcb8b; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+2) .timezone__city { color: #8fa1b3; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+3) .timezone__city { color: #bf616a; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+4) .timezone__city { color: #a3be8c; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+5) .timezone__city { color: #b48ead; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+6) .timezone__city { color: #d08770; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+7) .timezone__city { color: #96b5b4; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #b48ead; }
+
+[data-theme="solarized-dark"],
+[data-theme="solarized-dark"] .main {
+  background-color: #002b36;
+  color: #93a1a1;
+}
+
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+1) .timezone__city { color: #b58900; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+2) .timezone__city { color: #268bd2; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+3) .timezone__city { color: #dc322f; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+4) .timezone__city { color: #859900; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+5) .timezone__city { color: #6c71c4; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+6) .timezone__city { color: #cb4b16; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+7) .timezone__city { color: #2aa198; }
+[data-theme="solarized-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #d33682; }

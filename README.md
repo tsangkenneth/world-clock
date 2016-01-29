@@ -11,4 +11,4 @@ Include additional cities by adding `.timezone` elements:
 </div>
 ```
 
-Default color theme is [Solarized](http://ethanschoonover.com/solarized).
+Default color theme is [Base16 Ocean Dark](https://chriskempson.github.io/base16/#ocean). [Solarized](http://ethanschoonover.com/solarized) is also available.
