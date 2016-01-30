@@ -2,10 +2,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   margin: 0;
+  position: relative;
 }
 
 .header {
-  height: 20px;
+  height: 32px;
+  position: fixed;
+  width: 100%;
 }
 
 .main {
@@ -16,7 +19,27 @@ body {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1200px;
-  min-height: calc(100vh - 20px);
+  min-height: calc(100vh);
+  padding: 32px 0;
+}
+
+.theme {
+  float: right;
+}
+
+.theme__label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.theme__selector {
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: 0.8rem;
+  height: 24px;
+  margin: 6px 8px 0;
 }
 
 .timezone {
@@ -41,13 +64,14 @@ body {
   font-weight: 200;
 }
 
-[data-theme="base16-ocean-dark"],
-[data-theme="base16-ocean-dark"] .main {
+[data-theme="base16-ocean-dark"] {
   background-color: #2b303b;
   color: #93a1a1;
 }
 
-[data-theme="base16-ocean-dark"] { background-color: }
+[data-theme="base16-ocean-dark"] .theme__label,
+[data-theme="base16-ocean-dark"] .theme__selector { color: #4f5b66; }
+
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+1) .timezone__city { color: #ebcb8b; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+2) .timezone__city { color: #8fa1b3; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+3) .timezone__city { color: #bf616a; }
@@ -57,11 +81,13 @@ body {
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+7) .timezone__city { color: #96b5b4; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #b48ead; }
 
-[data-theme="solarized-dark"],
-[data-theme="solarized-dark"] .main {
+[data-theme="solarized-dark"] {
   background-color: #002b36;
   color: #93a1a1;
 }
+
+[data-theme="solarized-dark"] .theme__label,
+[data-theme="solarized-dark"] .theme__selector { color: #586e75; }
 
 [data-theme="solarized-dark"] .timezone:nth-of-type(8n+1) .timezone__city { color: #b58900; }
 [data-theme="solarized-dark"] .timezone:nth-of-type(8n+2) .timezone__city { color: #268bd2; }

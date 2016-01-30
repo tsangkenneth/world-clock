@@ -1,6 +1,6 @@
 window.onload = function main() {
   var timezones = document.querySelectorAll('.timezone');
-  var themeSelector = document.querySelector('#theme');
+  var themeSelector = document.querySelector('#theme-selector');
 
   var getCalendarOffset = function getCalendarOffset(timezone) {
     var localTime = moment.tz(moment().format('YYYY-MM-DD, HH:mm:ss'), 'America/Los_Angeles');
