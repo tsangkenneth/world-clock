@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+.header {
+  height: 20px;
+}
+
 .main {
   align-items: center;
   box-sizing: border-box;
@@ -12,7 +16,7 @@ body {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
 }
 
 .timezone {

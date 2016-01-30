@@ -1,5 +1,6 @@
 window.onload = function main() {
   var timezones = document.querySelectorAll('.timezone');
+  var themeSelector = document.querySelector('#theme');
 
   var getCalendarOffset = function getCalendarOffset(timezone) {
     var localTime = moment.tz(moment().format('YYYY-MM-DD, HH:mm:ss'), 'America/Los_Angeles');
@@ -24,4 +25,10 @@ window.onload = function main() {
   }
 
   setInterval(updateTimes, 500);
+
+  themeSelector.onchange = function switchTheme() {
+    var body = document.querySelector('body');
+
+    body.dataset.theme = this.value;
+  }
 };
