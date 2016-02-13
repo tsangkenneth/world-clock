@@ -81,6 +81,19 @@ body {
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+7) .timezone__city { color: #96b5b4; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #b48ead; }
 
+[data-theme="duotone-blue-dark"] {
+  background-color: #1e2427;
+  color: #e7f6ff;
+}
+
+[data-theme="duotone-blue-dark"] .theme__label,
+[data-theme="duotone-blue-dark"] .theme__selector { color: #566670; }
+
+[data-theme="duotone-blue-dark"] .timezone:nth-of-type(4n+1) .timezone__city { color: #afdfff; }
+[data-theme="duotone-blue-dark"] .timezone:nth-of-type(4n+2) .timezone__city { color: #fbd883; }
+[data-theme="duotone-blue-dark"] .timezone:nth-of-type(4n+3) .timezone__city { color: #87ccfe; }
+[data-theme="duotone-blue-dark"] .timezone:nth-of-type(4n+4) .timezone__city { color: #d8a93f; }
+
 [data-theme="solarized-dark"] {
   background-color: #002b36;
   color: #93a1a1;
