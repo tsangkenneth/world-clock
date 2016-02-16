@@ -79,7 +79,7 @@ body {
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+5) .timezone__city { color: #b48ead; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+6) .timezone__city { color: #d08770; }
 [data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+7) .timezone__city { color: #96b5b4; }
-[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #b48ead; }
+[data-theme="base16-ocean-dark"] .timezone:nth-of-type(8n+8) .timezone__city { color: #8f5536; }
 
 [data-theme="duotone-blue-dark"] {
   background-color: #1e2427;
